@@ -859,10 +859,9 @@ h5 a {
 }
 .answer_text{
     width: 1070px;
-    font-size: 16px;
+    font-size: inherit;
     line-height: 1.2rem;
-    font-style: normal;
-    font-family: 'NanumSquareNeo';
+    --webkit-text-size-adjust: none;
 }
 
 #franchise .answer {
