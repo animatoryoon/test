@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1410">
+    <title>Witch's Donut Village</title>
+    <!-- 웹폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header_scroll">
+            <div class="header_inner">
+                <div class="quick">
+                    <h1 class="logo">
+                        <a href="https://jeongseinn.github.io/witch.s_donut_village/" class="top">
+                            <div></div>
+                        </a>
+                    </h1>
+                    <div class="gnb_wrap">
+                        <ul id="gnb">
+                            <li class="link_about">
+                                <a href="./sub/about_brand.html">ABOUT</a>
+                            </li>
+                            <li class="link_menu">
+                                <a href="./sub/menu.html">MENU</a>
+                            </li>
+                            <li class="link_prom">
+                                <a href="./sub/promotion_membership.html">PROMOTION</a>
+                            </li>
+                            <li class="link_cont">
+                                <a href="./sub/contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="link_wrap">
+                    <ul class="link">
+                        <li>
+                            <div class="search">
+                                <input type="search">
+                                <div class="s_button">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="member">
+                                <div class="member_wrap">
+                                </div>
+                                <ul class="member_menu">
+                                    <li>
+                                        LOGIN
+                                    </li>
+                                    <li>
+                                        JOIN
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="inner_submenu">
+                    <div class="po_wrap">
+                        <div class="about sub_po">
+                            <div class="img_wrap">
+                                <img src="./images/header/about.svg" alt="about">
+                            </div>
+                            <h2>
+                                ABOUT
+                            </h2>
+                            <h4>
+                                달콤하고 재미있는
+                                <br>인사와 소개
+                            </h4>
+                        </div>
+                        <div class="menu sub_po">
+                            <div class="img_wrap">
+                                <img src="./images/header/menu.svg" alt="menu">
+                            </div>
+                            <h2>
+                                MENU
+                            </h2>
+                            <h4>
+                                입안 가득 달콤한
+                                <br>위치스도넛빌리지 메뉴
+                            </h4>
+                        </div>
+                        <div class="promotion sub_po">
+                            <div class="img_wrap">
+                                <img src="./images/header/promotion.svg" alt="promotion">
+                            </div>
+                            <h2>
+                                PROMOTION
+                            </h2>
+                            <h4>
+                                달콤한 기쁨이 가득한
+                                <br>여러가지 혜택
+                            </h4>
+                        </div>
+                        <div class="contact sub_po">
+                            <div class="img_wrap">
+                                <img src="./images/header/contact.svg" alt="contact">
+                            </div>
+                            <h2>
+                                CONTACT
+                            </h2>
+                            <h4>
+                                언제나 함께하는 친구
+                                <br>위치스도넛빌리지
+                            </h4>
+                        </div>
+                    </div>
+                    <ul class="link_about">
+                        <li><a href="./sub/about_brand.html">브랜드</a></li>
+                        <li><a href="./sub/about_character.html">캐릭터</a></li>
+                    </ul>
+                    <ul class="link_menu">
+                        <li><a href="./sub/menu.html#donut">도넛</a></li>
+                        <li><a href="./sub/menu.html#cupcake">컵케이크</a></li>
+                        <li><a href="./sub/menu.html#coffee">커피</a></li>
+                        <li><a href="./sub/menu.html#beverage">음료</a></li>
+                    </ul>
+                    <ul class="link_prom">
+                        <li><a href="./sub/promotion_membership.html">멤버십</a></li>
+                        <li><a href="./sub/promotion_event.html">이벤트</a></li>
+                    </ul>
+                    <ul class="link_cont">
+                        <li><a href="./sub/contact.html#delivery">배달주문</a></li>
+                        <li><a href="./sub/contact.html#group_order">단체주문</a></li>
+                        <li><a href="./sub/contact.html#store">매장찾기</a></li>
+                        <li><a href="./sub/contact.html#franchise">가맹문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="main_banner">
+            <div class="banner_inner">
+                <div class="ani">
+                    <video src="./media/banner.mp4" autoplay loop muted></video>
+                </div>
+                <div class="banner_frame">
+                    <img src="./images/main/banner_main/maskframe.svg" alt="banner_frame">
+                </div>
+            </div>
+        </div>
+        <div id="signature">
+            <h1 class="title">
+                <img src="./images/main/title/title_signature.svg" alt="title">
+            </h1>
+            <h3 class="explan">
+                위치스 도넛 빌리지만의 독특한 시그니처 캐릭터 도넛
+            </h3>
+            <div id="slide_wrap">
+                <div id="slide" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_blue.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_blue.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_blue.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">블루 팝핑도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_purple.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_blueberry.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_purple.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">블루베리 크런치도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_choco.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_choco.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_choco.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">초코 크런치도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_green.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_green.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_green.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">말차 팝핑도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_pink.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_strawberry.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_pink.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">딸기 크런치도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_yellow.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_smile_vanilla.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_yellow.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">오리지널 스마일도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_brown.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_smile_original.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_brown.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">바나나 스마일도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_blue.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_blue.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_blue.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">블루 팝핑도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_purple.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_blueberry.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_purple.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">블루베리 크런치도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_choco.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_choco.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_choco.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">초코 크런치도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_green.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_green.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_green.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">말차 팝핑도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_pink.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_monster_strawberry.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_pink.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">딸기 크런치도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_yellow.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_smile_vanilla.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_yellow.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">오리지널 스마일도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li>
+                                <img class="bg" src="./images/main/signature/bg_brown.svg" alt="bg">
+                                <img class="donut" src="./images/main/signature/donut_smile_original.png"
+                                    alt="donut"></img>
+                                <img class="cloud" src="./images/main/signature/cloud_brown.svg" alt="cloud">
+                                <div class="screen">
+                                    <p class="name">바나나 스마일도넛</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="event">
+            <h1 class="title">
+                <img src="./images/main/title/title_event.svg" alt="title">
+            </h1>
+            <h3 class="explan">
+                매달 더 풍성하게 찾아오는 위치스 도넛 빌리지의 특별한 혜택과 이벤트
+            </h3>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide one">
+                        <li>
+                            <a href="./sub/promotion_event.html">
+                                <ul class="event_title">
+                                    <li>
+                                        <span>우주라이크 도넛?<br>신제품 우주도넛 이벤트</span>
+                                    </li>
+                                    <li>
+                                        2024.04.01 ~ 2024.04.28
+                                    </li>
+                                </ul>
+                                <img src="./images/main/event/event_instar.png" alt="event">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub/promotion_event.html">
+                                <ul class="event_title">
+                                    <li>
+                                        쿠폰과 함께 찾아온<br>위치스 도넛 빌리지 굿즈
+                                    </li>
+                                    <li>
+                                        2024.02.15 ~ 소진 시
+                                    </li>
+                                </ul>
+                                <img src="./images/main/event/event_coupon.png" alt="event">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub/promotion_event.html">
+                                <ul class="event_title">
+                                    <li>
+                                        피크닉 시즌엔<br>할인과 함께 테이크 아웃
+                                    </li>
+                                    <li>
+                                        2021.04.01 ~ 2024.05.31
+                                    </li>
+                                </ul><img src="./images/main/event/event_takeout.png" alt="event">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide two">
+                        <li>
+                            <a href="./sub/promotion_event.html">
+                                <ul class="event_title">
+                                    <li>
+                                        위치스 도넛 빌리지<br>멤버십 혜택
+                                    </li>
+                                    <li>
+                                        상시진행
+                                    </li>
+                                </ul>
+                                <img src="./images/main/event/event_membership.png" alt="event">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub/promotion_event.html">
+                                <ul class="event_title">
+                                    <li>
+                                        월요병 치료제는 역시<br>위치스 도넛 빌리지!
+                                    </li>
+                                    <li>
+                                        상시진행
+                                    </li>
+                                </ul>
+                                <img src="./images/main/event/event_monday.png" alt="event">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub/promotion_event.html">
+                                <ul class="event_title">
+                                    <li>
+                                        1회용 컵<br>사용 줄이기 안내
+                                    </li>
+                                    <li>
+                                        상시진행
+                                    </li>
+                                </ul>
+                                <img src="./images/main/event/event_disposable.png" alt="event">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="member_banner">
+            <div class="banner">
+                <div class="ruru" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1500">
+                    <img src="./images/main/banner1/ruru.svg" alt="ruru">
+                </div>
+                <div class="hand" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="1200">
+                    <img src="./images/main/banner1/ruru_hand.svg" alt="hand">
+                </div>
+
+                <div class="left_garand" data-aos="fade-right" data-aos-delay="300"><img
+                        src="./images/main/banner1/left_garand.svg" alt="garand"></div>
+
+                <div class="welcome" data-aos="zoom-in" data-aos-duration="1000"><img
+                        src="./images/main/banner1/welcome.svg" alt="welcome"></div>
+                <div class="right_balloon">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="800"><img src="./images/main/banner1/right_balloon.svg" alt="balloon"></div>
+                </div>
+                <div class="left_balloon">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800"
+                        data-aos-delay="1000"><img src="./images/main/banner1/left_balloon.svg" alt="balloon"></div>
+                </div>
+                <div class="right_garand" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300"><img
+                        src="./images/main/banner1/right_garand.svg" alt="garand">
+                </div>
+                <div class="character"><img src="./images/main/banner1/character_hi.gif" alt="character"></div>
+                <div class="ment"><img src="./images/main/banner1/ment.svg" alt="ment"></div>
+                <div class="button">
+                    <a href="./sub/promotion_membership.html">혜택 알아보기</a>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <h1 class="title">
+                <img src="./images/main/title/title_menu.svg" alt="title">
+            </h1>
+            <h3 class="explan">
+                기분좋은 디저트 타임, 위치스 도넛 빌리지의 다양한 메뉴
+            </h3>
+            <div class="menu_inner">
+                <div class="ruru">
+                    <img src="./images/main/menu/ruru.gif" alt="ruru">
+                </div>
+                <div class="menu_wrap menu2">
+                    <div class="donut_wrap">
+                        <a href="./sub/menu.html">
+                            <div class="circle">
+                                <img src="./images/main/menu/circle_donut.svg" alt="">
+                            </div>
+                            <div class="donut type">
+                                <img src="./images/main/menu/donut.png" alt="">
+                            </div>
+                            <div class="star">
+                                <img src="./images/main/menu/effect_star.svg" alt="">
+                            </div>
+                        </a>
+                        <div class="ex">
+                            <div class="balloon">
+                                <img src="./images/main/menu/ex_donut.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_wrap menu1">
+                    <div class="coffee_wrap">
+                        <a href="./sub/menu.html">
+                            <div class="circle">
+                                <img src="./images/main/menu/circle_coffee.svg" alt="">
+                            </div>
+                            <div class="coffee type">
+                                <img src="./images/main/menu/coffee.png" alt="">
+                            </div>
+                            <div class="star">
+                                <img src="./images/main/menu/effect_star.svg" alt="">
+                            </div>
+                        </a>
+                        <div class="ex">
+                            <div class="balloon">
+                                <img src="./images/main/menu/ex_coffee.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_wrap menu3">
+                    <div class="cupcake_wrap">
+                        <a href="./sub/menu.html">
+                            <div class="circle">
+                                <img src="./images/main/menu/circle_cupcake.svg" alt="">
+                            </div>
+                            <div class="cupcake type">
+                                <img src="./images/main/menu/cupcake.png" alt="">
+                            </div>
+                            <div class="star">
+                                <img src="./images/main/menu/effect_star.svg" alt="">
+                            </div>
+                        </a>
+                        <div class="ex">
+                            <div class="balloon">
+                                <img src="./images/main/menu/ex_cupcake .svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_wrap menu4">
+                    <div class="beverage_wrap">
+                        <a href="./sub/menu.html">
+                            <div class="circle">
+                                <img src="./images/main/menu/circle_beverage.svg" alt="">
+                            </div>
+                            <div class="beverage type">
+                                <img src="./images/main/menu/beverage.png" alt="">
+                            </div>
+                            <div class="star">
+                                <img src="./images/main/menu/effect_star.svg" alt="">
+                            </div>
+                        </a>
+                        <div class="ex">
+                            <div class="balloon">
+                                <img src="./images/main/menu/ex_beverage.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="donut_banner">
+            <div class="text">
+                <div class="try_donut">
+                    <img src="./images/main/banner2/try_donut.png" alt="try_donut">
+                </div>
+                <h1 class="sweet">
+                    입안에서 부드럽게 녹아내리는 <br><b>달콤함</b>
+                </h1>
+                <h2 class="fresh_donut">
+                    <strong>최상급의 신선한 재료</strong>만을 고수하여 당일
+                    <strong>새로 만든 도넛</strong>
+                    <br>기름에 튀기지 않고
+                    <strong>오븐에 구워</strong>칼로리가 낮은 <strong>담백한 도넛</strong>
+                </h2>
+                <h1 class="sweet">
+                    <span>sweet, soft, joyful, lively, fresh</span>
+                </h1>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact_inner">
+                <h1 class="title">
+                    <img src="./images/main/title/title_contact.svg" alt="title">
+                </h1>
+                <h3 class="explan">
+                    신비하고 달콤한 친구, 언제나 곁에 있는 위치스 도넛 빌리지
+                </h3>
+                <ul class="reservation">
+                    <li class="delivery domebox">
+                        <div class="text">
+                            <h2>
+                                <img src="./images/main/contact/ti_delivery.svg" alt="title">
+                            </h2>
+                            <h3>
+                                언제나 어디서나 도넛도넛
+                            </h3>
+                            <p>
+                                <strong>언제 어디서든 </strong>쉽고 간편하게<br>따뜻한 도넛을 받아<br> <strong>달콤함을 즐기세요!</strong>
+                            </p>
+                            <div class="button">
+                                <a href="./sub/contact.html">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="none ruru img">
+                            <img src="./images/main/contact/dilevery1.png" alt="character">
+                        </div>
+                        <div class="hover ruru img">
+                            <img src="./images/main/contact/dilevery2.png" alt="character">
+                        </div>
+                    </li>
+                    <li class="group_order domebox">
+                        <div class="text">
+                            <h2>
+                                <img src="./images/main/contact/ti_grouporder.svg" alt="title">
+                            </h2>
+                            <h3>
+                                모두함께 즐기는 달콤함
+                            </h3>
+                            <p>
+                                <strong>특별한 날, 특별한 모임</strong><br>소중한 사람들과 함께<br><strong>즐거움을 나누세요</strong>
+                            </p>
+                            <div class="button">
+                                <a href="./sub/contact.html">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="none box img">
+                            <img src="./images/main/contact/group1.png" alt="character">
+                        </div>
+                        <div class="hover box img">
+                            <img src="./images/main/contact/group2.png" alt="character">
+                        </div>
+                    </li>
+                </ul>
+                <div class="store pill">
+                    <div class="text">
+                        <h2>
+                            <img src="./images/main/contact/ti_store.svg" alt="title">
+                        </h2>
+                        <h3>
+                            내 주변 위치스 도넛 빌리지
+                        </h3>
+                        <p>신비한 도넛이 가득한
+                            <br>내 주변 가까운 <strong>위치스 도넛 빌리지 매장</strong>을
+                            <br><strong>쉽고 빠르게</strong> 찾아보세요
+                        </p>
+                        <div class="button">
+                            <a href="./sub/contact.html">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="franchise pill">
+                    <div class="text">
+                        <h2>
+                            <img src="./images/main/contact/ti_franchise.svg" alt="title">
+                        </h2>
+                        <h3>
+                            위치스 도넛 빌리지로 새로운 출발
+                        </h3>
+                        <p>차별화된 도넛 브랜드,<br>
+                            <strong>위치스 도넛 빌리지와 함께</strong>할<br>
+                            <strong>가맹점주님</strong>을 모십니다
+                        </p>
+                        <div class="button">
+                            <a href="./sub/contact.html">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="text">
+                    <h2>
+                        <img src="./images/main/contact/ti_gallery.svg" alt="title">
+                    </h2>
+                </div>
+                <div>
+                    <ul class="icon">
+                        <li><a href="javascript:return false;"></a></li>
+                        <li><a href="javascript:return false;"></a></li>
+                        <li><a href="javascript:return false;"></a></li>
+                    </ul>
+                </div>
+                <div id="gallery">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery7.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/main/contact/gallery7.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="main_footer">
+            <div class="footer_inner">
+                <h1 class="logo">
+                    <a href="https://jeongseinn.github.io/witch.s_donut_village/">
+                        <img src="./images/footer/logo_wsub.svg" alt="logo"></a>
+                </h1>
+                <dl class="information">
+                    <dt>COMPANY INFORMATION</dt>
+                    <dd>부산시 중구 중앙동 위치번지, 23-4</dd>
+                    <dd>본사 대표전화 : 1234-5678</dd>
+                    <dd>사업자등록번호 123-45-6789</dd>
+                    <dd>법인명 : 취업하고싶당 ㅣ 대표자 : 정세인</dd>
+                </dl>
+                <dl>
+                    <dt>HELP</dt>
+                    <dd>고객센터 : 1234-5678</dd>
+                    <dd>운영시간 : 평일 9시~12시, 13시~17시(주말/공휴일 제외)</dd>
+                    <dd>
+                        <ul class="icon">
+                            <li><a href="javascript:return false;"></a></li>
+                            <li><a href="javascript:return false;"></a></li>
+                            <li><a href="javascript:return false;"></a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h5 class="copy">
+                    <span>이용약관</span> ㅣ <span>개인정보처리방침</span> ㅣ Copyright 2023 witch's donut village. All rights
+                    reserved.
+                </h5>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 헤더-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(function () {
+            $(".submenu").hide();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() < 5) {
+                    $("header").addClass("header_scroll")
+                } else {
+                    $("header").removeClass("header_scroll")
+                }
+            });
+
+            $("#gnb").mouseenter(function () {
+                if ($(window).scrollTop() < 5) {
+                    $(".submenu").stop().slideDown()
+                    $("header").removeClass("header_scroll")
+                } else {
+                    $(".submenu").stop().slideDown()
+                }
+            });
+
+            $("header").mouseleave(function () {
+                if ($(window).scrollTop() < 5) {
+                    $(".submenu").hide()
+                    $("header").addClass("header_scroll")
+                } else {
+                    $(".submenu").stop().slideUp()
+                }
+            });
+
+            $(".sub_po").hide();
+            $(".about").show();
+            $(".link_about").mouseenter(function () {
+                $(".about").show().siblings(".sub_po").hide();
+            });
+            $(".link_menu").mouseenter(function () {
+                $(".menu").show().siblings(".sub_po").hide();
+            });
+            $(".link_prom").mouseenter(function () {
+                $(".promotion").show().siblings(".sub_po").hide();
+            });
+            $(".link_cont").mouseenter(function () {
+                $(".contact").show().siblings(".sub_po").hide();
+            });
+        });
+
+        $("ul.link_about").mouseenter(function () {
+                $(this).parent().parent().siblings().children().children(".gnb_wrap").children().children(".link_about").children().addClass("in").parent().siblings().children().removeClass("in")
+
+            });
+            $("ul.link_menu").mouseenter(function () {
+                $(this).parent().parent().siblings().children().children(".gnb_wrap").children().children(".link_menu").children().addClass("in").parent().siblings().children().removeClass("in")
+            });
+            $("ul.link_prom").mouseenter(function () {
+                $(this).parent().parent().siblings().children().children(".gnb_wrap").children().children(".link_prom").children().addClass("in").parent().siblings().children().removeClass("in")
+            });
+            $("ul.link_cont").mouseenter(function () {
+                $(this).parent().parent().siblings().children().children(".gnb_wrap").children().children(".link_cont").children().addClass("in").parent().siblings().children().removeClass("in")
+            });
+
+            $(".submenu").mouseleave(function () {
+                $(this).siblings().children().children(".gnb_wrap").children().children().children().removeClass("in")
+               
+            });
+
+
+
+
+    </script>
+
+    <!-- 시그니처 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 7,
+            spaceBetween: 0,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- 이벤트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
+
+    <!-- 멤버쉽베너 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- 갤러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper3", {
+            slidesPerView: 7,
+            spaceBetween: 10,
+            centeredSlides: false,
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 5000,
+        },
+        );
+
+    </script>
+</body>
+
+</html>

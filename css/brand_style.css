@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+/* font-family: 'NanumSquareNeoLight';
+    font-family: 'NanumSquareNeo';
+    font-family: 'NanumSquareNeoBold';
+    font-family: 'NanumSquareNeoExtraBold';
+    font-family: 'NanumSquareNeoHeavy'; */
+
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+span,
+strong,
+em {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 18px;
+    /* 1rem지정 */
+}
+
+body {
+    line-height: 1.2rem;
+    color: #383838;
+    font-style: normal;
+    font-family: 'NanumSquareNeo';
+    padding-top: 90px;
+}
+
+#wrap {
+    min-width: 1410px;
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------------헤더(서브)*/
+
+header {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(60, 87, 50);
+}
+
+header .header_inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+header .quick {
+    display: flex;
+}
+
+header #gnb {
+    display: flex;
+    font-size: 15px;
+    width: 500px;
+    padding-top: 22px;
+}
+
+header #gnb li a{
+    display: block;
+    text-align: center;
+    font-family: 'NanumSquareNeoBold';
+    padding-top: 5px;
+    margin-left: 30PX;
+    color: rgb(255, 255, 255);
+}
+
+
+header #gnb li a:hover, header #gnb li .in{
+    color: rgb(255, 190, 137);
+}
+
+header .logo a div{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    background: url(../images/header/logo_wsub.svg)no-repeat;
+}
+
+header .link {
+    display: flex;
+    padding-top: 25px;
+}
+
+header .search {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 200px;
+    height: 30px;
+    margin-left: 170px;
+    position: relative;
+}
+
+header .search input {
+    outline: none;
+    border: none;
+    height: 30px;
+    font-size: 20px;
+    width: 160px;
+    color: #fff;
+    background-color: transparent;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+header .s_button {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: url(../images/header/seach_white.svg) no-repeat;
+}
+
+header .member {
+    position: relative;
+}
+
+header .member_wrap {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 20px;
+    cursor: pointer;
+    background: url(../images/header/member_white.svg) no-repeat;
+}
+
+header .member:hover .member_menu {
+    display: block;
+}
+
+header .member_menu{
+    background-color: #fff;
+    position: absolute;
+    top: 28px;
+    left: 1px;
+    z-index: 15;
+    border-radius: 15px;
+    padding: 7px;
+    border: 2px solid rgb(60, 87, 50);
+    display: none;
+    color: rgb(60, 87, 50);
+}
+
+header .member_menu li {
+    display: block;
+    font-size: 13px;
+    padding: 2px;
+    font-family: 'NanumSquareNeoBold';
+    text-align: center;
+    cursor: pointer;
+}
+
+/* submenu */
+
+header .submenu {
+    background-color: rgb(255, 241, 203);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+header .inner_submenu {
+    margin: 0 auto;
+    width: 1320px;
+    display: flex;
+    position: relative;
+}
+
+.po_wrap{
+    width: 130px;
+    height: 240px;
+}
+
+.sub_po{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 130px;
+    text-align: center;
+}
+
+.sub_po .img_wrap{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 90px;
+    padding-top: 20px;
+    border-radius: 500px 500px 50px  50px ;
+}
+
+.sub_po .img_wrap img{
+    width: 70%;
+}
+
+.sub_po h2{
+    font-size: 18px;
+    padding-bottom: 5px;
+    color:rgb(48, 109, 26);
+}
+
+.sub_po h4{
+    font-size: 13px;
+    font-family: 'NanumSquareNeoLight';
+    line-height: 18px;
+}
+
+header .inner_submenu ul {
+    text-align: center;
+    padding: 15px 0;
+}
+
+header .inner_submenu .link_about{
+    width:90px;
+}
+header .inner_submenu .link_menu{
+    width: 76px;
+}
+header .inner_submenu .link_prom{
+    width: 125px;
+}
+header .inner_submenu .link_cont{
+    width: 110px;
+}
+
+header .inner_submenu ul li a{
+    display: block;
+    padding: 10px 0px;
+    font-size: 15px;
+    font-family: 'NanumSquareNeoBold';
+    color:rgb(30, 80, 12);
+  
+}
+header .inner_submenu ul li a:hover{
+    color:rgb(255, 115, 0)
+}
+
+
+/* ----------------------------------------------------------푸터(서브) */
+
+footer {
+    background: url(../images/footer/footer.svg) no-repeat center top;
+    height: 465px;
+    color: #fff;
+}
+
+.footer_inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 250px;
+    position: relative;
+}
+
+footer .logo {
+    width: 230px;
+    margin: 10px 0 0 50px;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer dt {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'NanumSquareNeoBold';
+}
+
+footer dd {
+    font-size: 12px;
+    margin-bottom: 3px;
+    font-family: 'NanumSquareNeoLight';
+}
+
+footer .information {
+    margin-left: 200px;
+}
+
+footer .icon {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .icon li a {
+    display: block;
+    padding: 25px;
+    background: no-repeat center;
+    background-size: 50%;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+footer .icon li:hover a {
+    opacity: 1;
+}
+
+footer .icon li:nth-child(1) a {
+    background-image: url(../images/main/contact/kakao.png);
+    background-position: top 14px center;
+}
+
+footer .icon li:nth-child(2) a {
+    background-image: url(../images/main/contact/instar.png);
+}
+
+footer .icon li:nth-child(3) a {
+    background-image: url(../images/main/contact/youtube.png);
+}
+
+footer .copy {
+    position: absolute;
+    font-family: 'NanumSquareNeoLight';
+    top: 400px;
+    left: 544px;
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+footer .copy span {
+    cursor: pointer;
+}
+
+/* --------------------------------------------------전체 타이틀(서브)*/
+
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.tab li a {
+    display: block;
+    margin: 0 5px;
+    font-family: 'NanumSquareNeoBold';
+    padding: 3px 10px 1px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(81, 111, 60);
+}
+
+.tab .click a {
+    background-color: rgb(81, 111, 60);
+    color: #fff;
+    font-family: 'NanumSquareNeo';
+}
+
+h1.title {
+    height: 50px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+h1.title>img {
+    height: 100%;
+}
+
+h3.explan {
+    text-align: center;
+    font-size: 18px;
+    padding: 40px 0;
+}
+
+/* -------------------------------------------------------스토리 */
+.story {
+    margin: 120px 0 200px;
+    height: 610px;
+}
+
+.story_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    height: 610px;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.left_img {
+    left: -287px;
+}
+
+.right_img {
+    right: -287px;
+}
+
+.story img {
+    width: 100%;
+}
+
+.gif {
+    position: absolute;
+    z-index: 3;
+}
+
+/* gif position */
+
+.baking {
+    width: 600px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.oven {
+    width: 450px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.coffee {
+    width: 450px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*text position */
+
+h1 {
+    line-height: 60px;
+    font-family: 'NanumSquareNeo';
+    font-weight: lighter;
+    font-size: 46px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-family: 'NanumSquareNeoExtraBold';
+}
+
+p {
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.left_t {
+    left: 0;
+}
+
+.right_t {
+    right: 0;
+}
+
+/* font-family: 'NanumSquareNeoLight';
+    font-family: 'NanumSquareNeo';
+    font-family: 'NanumSquareNeoBold';
+    font-family: 'NanumSquareNeoExtraBold';
+    font-family: 'NanumSquareNeoHeavy'; */
+
+
+.story h4, .video_section h4 {
+    position: absolute;
+    width: 640px;
+    bottom: -80px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.fresh,
+.deep {
+    left: -250px;
+}
+
+.plain {
+    right: -250px;
+}
+
+/* --------------------------------------------------------------비디오 */
+
+.video_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.quotes {
+    width: 30px;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+}
+
+.stop {
+    top: -10px;
+    left: 0;
+    width: 30px;
+}
+
+.turn {
+    transform: rotate(180deg);
+    top: 130px;
+    right: 30px;
+    width: 30px;
+}
+
+.story h2, .video_section h2 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 45px;
+    font-family: 'NanumSquareNeoLight';
+    padding-bottom: 20px;
+}
