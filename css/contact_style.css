@@ -60,7 +60,6 @@ html {
      -ms-text-size-adjust: none;  /*Ie*/
 
      -o-text-size-adjust: none; /*old versions of Opera*/
-[출처] 모바일 웹 폰트 크기 자동조정 문제 (text-size-adjust)|작성자 dlaskarud2
 }
 
 body {
@@ -867,10 +866,8 @@ h5 a {
     
 }
 .answer_text{
-    width: 1070px;
-    font-size: inherit;
-    line-height: 1.2rem;
-    --webkit-text-size-adjust: none;
+   
+
 }
 
 #franchise .answer {
