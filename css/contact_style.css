@@ -51,7 +51,16 @@ a {
 html {
     font-size: 18px;
     /* 1rem지정 */
-    --webkit-text-size-adjust: none;
+     /* Prevent font scaling in landscape */
+
+     -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+     -moz-text-size-adjust: none; /*Firefox*/
+
+     -ms-text-size-adjust: none;  /*Ie*/
+
+     -o-text-size-adjust: none; /*old versions of Opera*/
+[출처] 모바일 웹 폰트 크기 자동조정 문제 (text-size-adjust)|작성자 dlaskarud2
 }
 
 body {
